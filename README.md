@@ -16,7 +16,7 @@ Default VPC and subnets
 
 Run the following command to install Apache (httpd) on the EC2 instance:
 
-sudo yum install httpd -y
+** sudo yum install httpd -y
 
 This installs the Apache web server package.
 
@@ -24,35 +24,35 @@ This installs the Apache web server package.
 
 To start the Apache web server and enable it on boot, use:
 
-sudo systemctl start httpd
-sudo systemctl enable httpd
+** sudo systemctl start httpd
+** sudo systemctl enable httpd
 
 Check the status of the service with:
 
-sudo systemctl status httpd
+** sudo systemctl status httpd
 
 ## Step 3: Navigate to the Default Web Directory
 
 Apache serves files from /var/www/html by default. Navigate to this directory:
 
-cd /var/www/html
+** cd /var/www/html
 
 ## Step 4: Create and Deploy an HTML Application
 
 To create an HTML file, run:
 
-sudo vi index.html
+** sudo vi index.html
 
 Add your HTML content and save the file with :wq!.
 
 To remove the default Apache index file:
 
-sudo rm -rf index.html
+** sudo rm -rf index.html
 
 To create a new directory for organizing files:
 
-sudo mkdir test
-cd test/
+** sudo mkdir test
+** cd test/
 
 ## 5: Configure an Application Load Balancer
 
@@ -78,27 +78,27 @@ If the status check shows the instance is unhealthy, verify the correct path.
 
 Use ls to list files and directories:
 
-ls
-cd /var/www/html
-vi index.html
+** ls
+** cd /var/www/html
+** vi index.html
 
 Add content like Hi and save using :wq!.
 
 Restart Apache:
 
-sudo systemctl start httpd
+** sudo systemctl start httpd
 
 Register Additional Servers
 
 Create another EC2 instance and repeat Apache installation:
 
-sudo yum install httpd -y
-cd /var/www/html
-vi index.html
+** sudo yum install httpd -y
+** cd /var/www/html
+** vi index.html
 
 Add content like Hi from test server, then start the service:
 
-sudo systemctl start httpd
+** sudo systemctl start httpd
 
 Register this instance to the Target Group (TG) under the Load Balancer (LB).
 
