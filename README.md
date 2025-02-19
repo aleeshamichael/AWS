@@ -1,3 +1,4 @@
+![Alt txt] architecture for l.b.docx
 # AWS EC2 Apache Web Server and Load Balancer Setup
 
 This guide outlines the steps to set up an Apache web server on an AWS EC2 instance, configure a load balancer, and deploy an HTML application for high availability and scalability.
