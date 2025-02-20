@@ -16,7 +16,7 @@ Default VPC and subnets
 ## Step 1: Install Apache Web Server
 
 Run the following command to install Apache (httpd) on the EC2 instance:
-'''sh
+sh'''
 sudo yum install httpd -y
 '''
 This installs the Apache web server package.
