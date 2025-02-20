@@ -24,26 +24,27 @@ This installs the Apache web server package.
 ## Step 2: Start and Enable Apache
 
 To start the Apache web server and enable it on boot, use:
-
-**sudo systemctl start httpd
-**sudo systemctl enable httpd
-
+```sh
+  sudo systemctl start httpd
+  sudo systemctl enable httpd
+```
 Check the status of the service with:
-
-**sudo systemctl status httpd
+```sh
+  sudo systemctl status httpd
+```
 
 ## Step 3: Navigate to the Default Web Directory
 
 Apache serves files from /var/www/html by default. Navigate to this directory:
-
-**cd /var/www/html
-
+```sh
+  cd /var/www/html
+```
 ## Step 4: Create and Deploy an HTML Application
 
 To create an HTML file, run:
-
-**sudo vi index.html
-
+```sh
+  sudo vi index.html
+```
 Add your HTML content and save the file with :wq!.
 
 To remove the default Apache index file:
